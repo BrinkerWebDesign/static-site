@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// BASE STYLES
+$base-font-family: "sans-serif";
+$title-font-family: "serif";
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$spacing-unit:     30px;
+
+// COLORS
+$text-color: #000000;
+$background-color: #ffffff;
+$light-grey: #cacaca;
+$dark-grey:  #202020;
+$blue: rgb(0, 26, 255);
+$light-blue: #9eeaff;
+$green: #00ff1a;
+$red: rgb(255, 0, 0);
+
+// WIDTHS
+$content-width:    1000px;
+$on-palm:          400px;
+$on-laptop:        800px;
+$on-desktop:       960px;
+
+// MIXINS
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}

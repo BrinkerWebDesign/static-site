@@ -1,16 +1,16 @@
-# petrochemresource.com
+# Static Site Generator
 
-## Marketing website built for rapid development / and simple deployment.
+## by: BRINKER WEB DESIGN
 
-**GULP Output Static HTML5 Site**
-- NPM TWIG templating (no php back-end)
+**Output Static HTML5 Site**
+- NPM TWIG JS templating (no php back-end)
 - SASS style preprocessor
 - Concat and Minifiy CSS / JS
-- Deploy to git
+- Deploy to git branch
 
 *Using Graphicsmagick to resize images:*
 
-Ubuntu
+Debian
 ```apt-get install graphicsmagick```
 OSX
 ```brew install graphicsmagick```

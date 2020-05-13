@@ -1,0 +1,144 @@
+@import 'variable';
+@import 'grid';
+@import 'layout';
+
+/**
+ * Reset some basic elements
+ */
+ body, h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Basic styling
+ */
+ body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+ h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre,
+ ul, ol, dl, figure,
+ %vertical-rhythm {
+    margin-bottom: 10px;
+}
+
+
+
+h1{
+    font-size:20px;
+    font-weight: bold;
+}
+h2{
+    font-size: 18px;
+    font-style: italic;
+    color: $dark-grey;
+}
+h3{
+    font-size: 16px;
+    font-style: oblique;
+    color:$light-grey;
+}
+h4{
+    font-size: 14px;
+    font-style: italic;
+    color: $dark-grey;
+}
+h5{
+    font-size: 14px;
+    font-style: oblique;
+    color:$light-grey;
+}
+
+
+/**
+ * Images
+ */
+ img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Lists
+ */
+
+ li {
+    > ul,
+    > ol {
+        display:block;
+        margin-bottom: 10px;
+   }
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+/**
+ * Headings
+ */
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+    font-family: $title-font-family;
+}
+
+/**
+ * Links
+ */
+ a {
+    color: $dark-grey;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: $light-grey;
+    }
+}
+
+p{
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+//Classes
+.center{
+    display: block;
+    margin: 0 auto 20px;
+}
+.left{
+    float: left;
+    clear:left;
+}
+.right{
+    float: right;
+    clear: right;
+}
+
+.align-center{
+    text-align: center;
+    margin: auto;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}

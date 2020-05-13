@@ -96,12 +96,12 @@ gulp.task('serve', ['build'], function() {
 });
 
 
-// Deploy to Bitbucket
+// Deploy to Bitbucket - CAN CHANGE TO GITHUB
 gulp.task('bitbucket', function () {
     return gulp.src("site/**/*")
 	.pipe(bitbucket({
-		remoteUrl: "git@bitbucket.org:BrinkerWebDesign/petrochemresource.git",
-		branch: "production"
+		remoteUrl: "", // ENTER REPO URL,
+		branch: "" // SET BRANCH
 	}));
 });
 
